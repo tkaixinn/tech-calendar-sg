@@ -1,5 +1,6 @@
 import { events } from "@/data/events";
 import EventsGrid from "@/components/EventsGrid";
+import PlasmicBanner from "@/components/PlasmicBanner";
 
 export default function Home() {
   return (
@@ -44,10 +45,12 @@ export default function Home() {
         </div>
       </section>
 
+      <PlasmicBanner />
+
       <footer className="border-t border-gray-200 px-6 py-8 mt-8">
         <div className="max-w-6xl mx-auto flex items-center justify-between text-sm text-gray-400">
           <span>📅 Tech Calendar SG</span>
-          <span>Curating Singapore tech events</span>
+          <span>Curating Singapore Tech events</span>
         </div>
       </footer>
     </main>
