@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-500 text-lg max-w-xl">
-            Hackathons, workshops, talks and networking events — curated from
+            Hackathons, workshops, talks and networking events, curated from
             across the web so you never miss what's happening.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
       <footer className="border-t border-gray-200 px-6 py-8 mt-8">
         <div className="max-w-6xl mx-auto flex items-center justify-between text-sm text-gray-400">
           <span>📅 Tech Calendar SG</span>
-          <span>Curating Singapore Tech events</span>
+          <span>Curating Singapore's tech events</span>
         </div>
       </footer>
     </main>

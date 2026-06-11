@@ -103,7 +103,7 @@ export default function SubmitPage() {
       <footer className="border-t border-gray-200 px-6 py-8 mt-8">
         <div className="max-w-6xl mx-auto flex items-center justify-between text-sm text-gray-400">
           <span>📅 Tech Calendar SG</span>
-          <span>Curating Singapore tech events</span>
+          <span>Curating Singapore's tech events</span>
         </div>
       </footer>
     </main>

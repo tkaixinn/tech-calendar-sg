@@ -47,10 +47,17 @@ const categories = ["All", "hackathon", "workshop", "talk", "networking"];
 export default function EventsGrid({ events }: { events: Event[] }) {
   const [selected, setSelected] = useState("All");
 
-  const filtered =
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const upcoming = events
+  .filter((e) => new Date(e.date) >= today)
+  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+const filtered =
     selected === "All"
-      ? events
-      : events.filter((e) => e.category === selected);
+      ? upcoming
+      : upcoming.filter((e) => e.category === selected);
 
   return (
     <div>
