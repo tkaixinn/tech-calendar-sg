@@ -14,8 +14,12 @@ export default function PlasmicBanner() {
   if (!plasmicData) return null;
 
   return (
-    <PlasmicRootProvider loader={PLASMIC} prefetchedData={plasmicData}>
-      <PlasmicComponent component="TechCalendarBanner" />
-    </PlasmicRootProvider>
+    <div className="px-6 pb-12">
+      <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl border border-stone-200 bg-[#f6efe5] shadow-[0_18px_50px_rgba(194,151,108,0.12)]">
+        <PlasmicRootProvider loader={PLASMIC} prefetchedData={plasmicData}>
+          <PlasmicComponent component="TechCalendarBanner" />
+        </PlasmicRootProvider>
+      </div>
+    </div>
   );
 }
